@@ -22,8 +22,6 @@ public class Room {
     public Room(String name, String description) {
         this.name = name;
         this.description = description;
-
-
     }
 
     public Long getId() {
@@ -50,5 +48,11 @@ public class Room {
         this.description = description;
     }
 
+    public RoomCategory getRoomCategory() {
+        return roomCategory;
+    }
 
+    public void setRoomCategory(RoomCategory roomCategory) {
+        this.roomCategory = roomCategory;
+    }
 }

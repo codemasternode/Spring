@@ -9,15 +9,12 @@ public class RoomCategory {
     private Long id;
     private String name;
     private String description;
-    @OneToMany(cascade = CascadeType.ALL)
-    private Room room;
     public RoomCategory() {
     }
 
     public RoomCategory(String name, String description) {
         this.name = name;
         this.description = description;
-
     }
 
     public Long getId() {
@@ -43,6 +40,5 @@ public class RoomCategory {
     public void setDescription(String description) {
         this.description = description;
     }
-
 
 }
